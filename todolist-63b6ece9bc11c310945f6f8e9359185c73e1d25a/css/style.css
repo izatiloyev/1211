@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.to-do {
+  margin-top: 40px;
+}
+
+
+
+.done {
+  text-decoration: line-through;
+}
+
+
+.to-do .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.to-do .wrap h1 {
+  color: #000;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.to-do .wrap form {
+  margin-top: 22px;
+}
+.to-do .wrap form input {
+  width: 321px;
+  height: 42px;
+  border-radius: 10px;
+  border: 2px solid #007FFF;
+  padding-left: 20px;
+  color: #000;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.to-do .wrap form button {
+  width: 155px;
+  height: 42px;
+  border-radius: 10px;
+  background: #0071E3;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.todos {
+  margin-top: 42px;
+}
+.todos hr {
+  width: 71%;
+  background: rgba(0, 0, 0, 0.25);
+}
+.todos .wrap {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todos .wrap .box {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  gap: 25px;
+}
+.todos .wrap .box .item {
+  width: 282px;
+  height: 90px;
+  border-radius: 10px;
+  border: 1px solid #007FFF;
+  background: #F0F0F0;
+}
+.todos .wrap .box .item .wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.todos .wrap .box .item .wrapper .info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 15px;
+}
+.todos .wrap .box .item .wrapper .info .title {
+  color: #000;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  user-select: none;
+}
+.todos .wrap .box .item .wrapper .info .time {
+  color: rgba(0, 0, 0, 0.55);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  user-select: none;
+}
+.todos .wrap .box .item .wrapper button {
+  background: none;
+  border: none;
+  user-select: none;
+}
+.todos .wrap .box .item.done {
+  border: 1px solid green;
+}/*# sourceMappingURL=style.css.map */
+
+.btn {
+	width: 220px;
+	height: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: 0.3s all;
+	outline: 0;
+}
+.btn_white {
+	background-color: #fff;
+}
+
+
+.modaln {
+	
+	
+	width: 100%;
+	justify-content: center;
+	display: none;
+	margin: 0 auto;
+align-items: center;
+	height: 100vh;
+	background-color: black;
+
+}
+.modal-dialog {
+	width: 500px;
+	height: fit-content;
+	background-color: black;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1050;
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.modal__dialog {
+	max-width: 500px;
+	margin: 40px auto;
+	
+
+
+}
+.modal__content {
+	position: relative;
+	width: 100%;
+	padding: 40px;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	max-height: 80vh;
+	overflow-y: auto;
+}
+.modal__close {
+	position: absolute;
+	top: 8px;
+	right: 14px;
+	font-size: 30px;
+	color: #000;
+	opacity: 0.5;
+	font-weight: 700;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+.modal__title {
+	text-align: center;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.modal__input {
+	display: block;
+	margin: 20px auto 20px auto;
+	width: 280px;
+	height: 50px;
+	background: #fff;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	border: none;
+	font-size: 18px;
+	text-align: center;
+	padding: 0 20px;
+	outline: 0;
+}
+.modal .btn {
+	display: block;
+	width: 280px;
+	margin: 0 auto;
+}
